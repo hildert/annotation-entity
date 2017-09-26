@@ -13,3 +13,4 @@ $ cp phpunit.xml.dist phpunit.xml
 # Run Tests
 $ vendor/bin/phpunit
 ```
+
