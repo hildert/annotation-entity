@@ -20,4 +20,18 @@ class EntityTest extends TestCase
        $this->assertEquals('hildert', $user->userName);
        $this->assertEquals('male', $user->gender);
     }
+
+    public function testGetArrayCopy()
+    {
+        $user = new UserEntity();
+        $userData = [
+            "id" => 1,
+            "user_name" => 'hildert',
+            'gender' => 'male'
+        ];
+        $user->exchangeArray($userData);
+
+        $userArrayCopy = $user->getArrayCopy();
+        $this->assertEquals($userData, $userArrayCopy);
+    }
 }

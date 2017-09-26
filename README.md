@@ -1,3 +1,7 @@
+<p align="left">
+<a href="https://travis-ci.org/hildert/annotation-entity"><img src="https://travis-ci.org/hildert/annotation-entity.svg?branch=master" alt="Build Status"></a>
+</p>
+
 # annotation-entity
 A PHP Library help phper convert array to dto entity.
 
